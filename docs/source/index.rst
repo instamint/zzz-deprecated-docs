@@ -1,8 +1,9 @@
-Welcome to Lumache's documentation!
+Instamint
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
+**Instamint** is a B2B API for minting and managing NFTS. It is for NFTs what
+Strip is for payments.
+
 It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
 and offers a *simple* and *intuitive* API.
 
