@@ -1,9 +1,7 @@
-Template for the Read the Docs tutorial
+Instamint Docs
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+Instamint ReadTheDocs: https://
 
-Read the tutorial here:
+Read the tutorial here: https://instamint.readthedocs.io/en/latest/api.html
 
-https://docs.readthedocs.io/en/stable/tutorial/
