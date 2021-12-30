@@ -6,48 +6,28 @@ Instamint
 +------+---------------+
 | API  | Description   |
 +======+===============+
-| 1    | Puss in Boots |
+| Meta   | Mint |
 +------+---------------+
-| 2    | Cinderella    |
+| Disburse     | Cinderella    |
 +------+---------------+
-
-.. list-table:: List tables can have captions like this one.
-    :widths: 10 5 10 50
-    :header-rows: 1
-    :stub-columns: 1
-
-    * - API
-      - Description
-      - Version
-    * - Meta
-      - Minting and transfer of NFTs
-      - Beta v1.0
-    * - Disburse
-      - Royalties, Auction Engine
-      - Alpha
-    * - Yield
-      - Staking and DeFi
-      - Column 2
+| Yield     | Cinderella    |
++------+---------------+
 
 Instamint is multichain, meaning that tokens can be minted across a number of blockchains. Additional chains are planned to be supported and come online over the coming quarters.
 
-.. list-table:: List tables can have captions like this one.
-    :widths: 10 5 10 50
-    :header-rows: 1
-    :stub-columns: 1
-
-    * - API
-      - Description
-      - Version
-    * - Meta
-      - Minting and transfer of NFTs
-      - Beta v1.0
-    * - Disburse
-      - Royalties, Auction Engine
-      - Alpha
-    * - Yield
-      - Staking and DeFi
-      - Column 2
++------+---------------+
+| Chain  | Implementation   |
++======+===============+
+| Ethereum   | Yes |
++------+---------------+
+| Polygon     | Yes    |
++------+---------------+
+| Algorand     | Q12022    |
++------+---------------+
+| Avalance     | TBD    |
++------+---------------+
+| Hedera     | TBD    |
++------+---------------+
 
 It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
 and offers a *simple* and *intuitive* API.
