@@ -44,5 +44,6 @@ Contents
 --------
 
 .. toctree::
+   meta
    usage
    api
