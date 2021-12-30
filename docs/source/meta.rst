@@ -90,7 +90,7 @@ Instamint manages a growing library of token smart contracts. For example, an ER
 
 In the future, clients will be able to not only mint NFTs but create self-custodied smart contracts. For example, an artist may wish to have their own ERC721 smart contract and Instamint will provide the ability to do that with an API. Each instance of a smart contract will be given a short name to track. This is also for retrieving metadata via a single URI scheme. The URI scheme for Instamint across any smart contract on any chain is:
 
-https://api.meta.instamint.com/meta/v1/uri/contract/CONTRACT_SHORT_NAME/token/TOKEN_ID
+...../meta/v1/uri/contract/CONTRACT_SHORT_NAME/token/TOKEN_ID
 
 In the above scheme, CONTRACT_SHORT_NAME would be replaced by INSTA1, INSTA2 or any other registered smart contract
 
