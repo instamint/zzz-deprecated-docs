@@ -3,15 +3,15 @@ Instamint
 
 **Instamint** is a suite of B2B APIs for minting and managing NFTs. Currently, Instamint is three sets of APIs, each serving a specific purpose. They are:
 
-+-----------+---------------+
-| API       | Description   |
-+===========+===============+
-| Meta      | Mint          |
-+-----------+---------------+
-| Disburse  | Cinderella    |
-+-----------+---------------+
-| Yield     | Cinderella    |
-+-----------+---------------+
++-----------+-----------------------------------------------------------------------------------------------------------+
+| API       | Description                                                                                               |
++===========+===========================================================================================================+
+| Meta      | Mint, premint, transfer multi-asset cross-chain NFTs and manage custodial and non-custodial accounts      |
++-----------+-----------------------------------------------------------------------------------------------------------+
+| Disburse  | Royalties, fractionalization, payment settlement and auction engine                                       |
++-----------+-----------------------------------------------------------------------------------------------------------+
+| Yield     | NFT DeFi                                                                                                  |
++-----------+-----------------------------------------------------------------------------------------------------------+
 
 Instamint is multichain, meaning that tokens can be minted across a number of blockchains. Additional chains are planned to be supported and come online over the coming quarters.
 
