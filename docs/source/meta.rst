@@ -9,6 +9,9 @@ An asset is associated with four parties - Partner, Issuer or Creator, Owner and
 
 Thus, Meta has API endpoints that handle the creation of parties and their association with NFTs.
 
+Party Management
+-------------------
+
 +----------------------------+-----------------------------------------------------------------------------+
 | Endpoint                   | Purpose                                                                     |
 +============================+=============================================================================+
@@ -16,6 +19,9 @@ Thus, Meta has API endpoints that handle the creation of parties and their assoc
 +----------------------------+-----------------------------------------------------------------------------+
 | /meta/v1/party/lookup      | Lookup a party by name and retrieve                                         |
 +----------------------------+-----------------------------------------------------------------------------+
+
+Asset Management
+---------------------
 
 +----------------------------+-----------------------------------------------------------------------------+
 | Endpoint                   | Purpose                                                                     |
@@ -34,7 +40,7 @@ Thus, Meta has API endpoints that handle the creation of parties and their assoc
 +----------------------------+-----------------------------------------------------------------------------+
 
 Minting
-========
+---------------
 
 The endpoint to mint an asset is /meta/v1/asset/mint. A JSON POST request includes the following parameters that can be supplied.
 
