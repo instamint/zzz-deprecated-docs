@@ -28,7 +28,7 @@ Currently, Instamint is three sets of APIs, each serving a specific purpose for 
 | Yield     | NFT DeFi                                                                                     |
 +-----------+----------------------------------------------------------------------------------------------+
 
-In addition to the APIs, Instamint consists of two applications. **Console** is the dashboard applications where partners can track their inventory of assets, manage API keys and view analytics.
+In addition to the APIs, Instamint consists of two applications. **Console** is the dashboard applications where partners can track their inventory of assets, manage API keys and view analytics. Market is a B2C app that allows retails users to mint their Instagram photos and is used as a showcase and requirements driver for the suite of APIs.
 
 Multichain
 -----------
