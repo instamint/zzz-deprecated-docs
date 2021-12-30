@@ -6,8 +6,7 @@ Instamint
 +-----------+----------------------------------------------------------------------------------------------+
 | API       | Description                                                                                  |
 +===========+==============================================================================================+
-| Meta      | Mint, premint, transfer multi-asset cross-chain NFTs                                         |
-|           | and manage custodial and non-custodial accounts                                              |
+| Meta      | Manage multi-asset cross-chain NFTs and accounts                                             |
 +-----------+----------------------------------------------------------------------------------------------+
 | Disburse  | Royalties, fractionalization, payment settlement and auction engine                          |
 +-----------+----------------------------------------------------------------------------------------------+
