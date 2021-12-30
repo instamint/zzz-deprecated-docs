@@ -1,4 +1,4 @@
-Meta Overview
+Meta
 ===================================
 
 The **Meta** API is used to mint NFTs or *assets*. The API requires an API key and has an endpoint of https://api.meta.instamint.com/meta/v1/. 
