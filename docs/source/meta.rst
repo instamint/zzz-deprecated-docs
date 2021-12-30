@@ -2,7 +2,7 @@ Meta
 ===================================
 
 The **Meta** API is used to mint NFTs
-.. code-block::
+.. code-block:: json
    :caption: A cool example
 {
     "instamintCreatorID":"0f9B3cCD7a8E491EA84D0655E37207a3",
@@ -29,7 +29,7 @@ The **Meta** API is used to mint NFTs
         "id":"14442"
    }
 }
-.. code-block::
+
 
 +-----------+----------------------------------------------------------------------------------------------+
 | API       | Description                                                                                  |
