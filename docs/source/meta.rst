@@ -89,11 +89,6 @@ Instamint is multichain, meaning that tokens can be minted across a number of bl
 | Hedera    | Q2 2022                                                                                                   |
 +-----------+-----------------------------------------------------------------------------------------------------------+
 
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
 
 .. note::
 
