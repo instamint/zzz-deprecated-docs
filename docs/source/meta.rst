@@ -94,18 +94,6 @@ In the future, clients will be able to not only mint NFTs but create self-custod
 
 In the above scheme, CONTRACT_SHORT_NAME would be replaced by INSTA1, INSTA2 or any other registered smart contract
 
-
-+-----------+----------------------------------------------------------------------------------------------+
-| Smart Contract             | Chain | Contract Address                                                                     |
-+===========+==============================================================================================+
-| ERC721        | Ethereum |                                                   |
-+-----------+----------------------------------------------------------------------------------------------+
-| /meta/v1/asset/mintBatch   | Request a batch of assets be minted                                         |
-+-----------+----------------------------------------------------------------------------------------------+
-| /meta/v1/asset/status      | Get status of an asset                                                      |
-
-
-
 .. note::
 
    Due to the expanding and complex nature of blockchain, the Instamint APIs are constantly being improved.
