@@ -11,14 +11,14 @@ Instamint
     * - API
       - Description
       - Version
-    * - Stub Row 1
-      - Row 1
-      - Column 2
-    * - Stub Row 2
-      - Row 2
-      - Column 2
-    * - Stub Row 3
-      - Row 3
+    * - Meta
+      - Minting and transfer of NFTs
+      - Beta v1.0
+    * - Disburse
+      - Royalties, Auction Engine
+      - Alpha
+    * - Yield
+      - Staking and DeFi
       - Column 2
 
 It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
