@@ -1,7 +1,25 @@
 Meta
 ===================================
 
-The **Meta** API is used to mint NFTs
+The **Meta** API is used to mint NFTs or *assets*. The API requires an API key and has an endpoint of https://api.meta.instamint.com/meta/v1/. 
+
+Instamint clients mint and manage NFTs. Requests to mint via Meta by clients are asynchronous and operate like jobs. When a request to mint an asset is made, a new unique asset identifier is return and the minting status of that asset is tracked. The client is able to pass in a arbitrary identifier that is then returned back on subsequent status checks, providing the client the ability to correlate the asset with their internal systems.
+
+An asset is associated with four parties - Partner, Issuer or Creator, Owner and Custodian. Each role is filled by one or more Parties, where each Party has a unique identifier assigned by Instamint. Clients register parties by submitting a string name, and optionally, a wallet address. The Partner role is usually the Instamint client making the API call. The issuer or creator is the party that originates the asset, say a bank or artist, the owner is the current owner of the asset, usually the issuer or creator initially and the custodian is Instamint by default.
+
+Thus, Meta has API endpoints that handle the creation of parties and their association with NFTs.
+
+
++-----------+----------------------------------------------------------------------------------------------+
+| Endpoint       | Purpose                                                                                 |
++===========+==============================================================================================+
+| /meta/v1/party/create      | Creates new parties and returns an identifier                               |
++-----------+----------------------------------------------------------------------------------------------+
+| /meta/v1/party/lookup  | Lookup a party by name and retrieve                          |
++-----------+----------------------------------------------------------------------------------------------+
+| Yield     | NFT DeFi                                                                                     |
++-----------+----------------------------------------------------------------------------------------------+
+
 .. code-block:: json
 {
     "instamintCreatorID":"0f9B3cCD7a8E491EA84D0655E37207a3",
@@ -30,16 +48,6 @@ The **Meta** API is used to mint NFTs
 }
 
 
-+-----------+----------------------------------------------------------------------------------------------+
-| API       | Description                                                                                  |
-+===========+==============================================================================================+
-| Meta      | Mint, premint, transfer multi-asset cross-chain NFTs                                         |
-|           | and manage custodial and non-custodial accounts                                              |
-+-----------+----------------------------------------------------------------------------------------------+
-| Disburse  | Royalties, fractionalization, payment settlement and auction engine                          |
-+-----------+----------------------------------------------------------------------------------------------+
-| Yield     | NFT DeFi                                                                                     |
-+-----------+----------------------------------------------------------------------------------------------+
 
 Instamint is multichain, meaning that tokens can be minted across a number of blockchains. Additional chains are planned to be supported and come online over the coming quarters.
 
