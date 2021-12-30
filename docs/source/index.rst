@@ -3,6 +3,14 @@ Instamint
 
 **Instamint** is a suite of B2B APIs for minting and managing NFTs. Currently, Instamint is three sets of APIs, each serving a specific purpose. They are:
 
++------+---------------+
+| API  | Description   |
++======+===============+
+| 1    | Puss in Boots |
++------+---------------+
+| 2    | Cinderella    |
++------+---------------+
+
 .. list-table:: List tables can have captions like this one.
     :widths: 10 5 10 50
     :header-rows: 1
