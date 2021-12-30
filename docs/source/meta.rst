@@ -73,34 +73,6 @@ The endpoint to mint an asset is /meta/v1/asset/mint. A JSON POST request includ
 +-----------+----------------------------------------------------------------------------------------------+
 
 
-{
-    "instamintCreatorID":"0f9B3cCD7a8E491EA84D0655E37207a3",
-    "partnerID":"F84D6fa6FADA44638AB8a1F907093263",
-    "partnerRole": "producer",
-    "environ":"testnet",
-    "targetChain": "eth",
-    "waitTolerance": "86400",
-    "contractType" : "erc1155",
-    "assetType": "multimedia",
-    "description":"Sendjoy Test mint",
-    "b2bCrossReferenceID":"3456789",
-    "mintStrategy": ["real"],
-    "assets":{
-      "image":"https://nft-test-bucket-sendjoy.s3.ap-southeast-1.amazonaws.com/test2/test1.mp4"},
-    "metadata":{
-        "name":"The Man Lim Speaks",
-        "description":"Lim Test NFT!",
-        "creator":"Lim Liang Chun 林良淳",
-        "fromTo":"Commissioned by Kong",
-        "created":"05/05/2021",
-        "title":"Shout out to Vitamint",
-        "creator_url":"www.sendjoynow.com/liang-chun",
-        "id":"14442"
-   }
-}
-
-
-
 Instamint is multichain, meaning that tokens can be minted across a number of blockchains. Additional chains are planned to be supported and come online over the coming quarters.
 
 +-----------+-----------------------------------------------------------------------------------------------------------+
