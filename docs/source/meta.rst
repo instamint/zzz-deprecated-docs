@@ -88,13 +88,13 @@ When an asset is minted, any file assets, like an image or video, is uploaded to
 Smart Contracts
 -----------------
 
-Instamint manages a growing library of token smart contracts. For example, an ERC1155 exists on Ethereum mainnet at address 0xa993749323E2A8B18f7D4Ef541D6A1a89Cd92888. Depending on client needs, additional ERC1155 contracts may be created. To manage this, each contract is assigned a short name. In the provided example, the short name for this contract is INSTA2. INSTA1 refers to an ERC721 and INSTA3 does not exist.
+Instamint manages a growing library of token smart contracts. For example, an ERC1155 exists on Ethereum mainnet at address 0xa993749323E2A8B18f7D4Ef541D6A1a89Cd92888 and Instamint uses this to mint NFTs. Depending on client needs, additional ERC1155 contracts may be required and created. To manage this, each contract is assigned a short name. In the provided contract address example, the short name for this contract is INSTA2. INSTA1 refers to an ERC721 and INSTA3 does not currently exist.
 
-In the future, clients will be able to not only mint NFTs but create self-custodied smart contracts. For example, an artist may wish to have their own ERC721 smart contract and Instamint will provide the ability to do that with an API. Each instance of a smart contract will be given a short name to track. This is also for retrieving metadata via a single URI scheme. The URI scheme for Instamint across any smart contract on any chain is:
+In the future, clients will be able to not only mint NFTs but *mint smart contracts* and create self-custody these smart contracts. For example, an artist may wish to have their own ERC721 smart contract and Instamint will provide the ability to do that with an API. As such, each instance of a smart contract will be given a short name to track. This is simplifies the need to retrieve metadata via a single URI scheme. The URI scheme for Instamint across any smart contract on any chain is:
 
-...../meta/v1/uri/contract/CONTRACT_SHORT_NAME/token/TOKEN_ID
+Scheme: /meta/v1/uri/contract/*CONTRACT_SHORT_NAME*/token/*TOKEN_ID*
 
-In the above scheme, CONTRACT_SHORT_NAME would be replaced by INSTA1, INSTA2 or any other registered smart contract
+In the above scheme, *CONTRACT_SHORT_NAME* would be replaced by *INSTA1*, *INSTA2* or any other smart contract minted through Instamint.
 
 .. note::
 
