@@ -83,6 +83,8 @@ Instamint is multichain, meaning that tokens can be minted across a number of bl
 | Hedera    | Q2 2022                                                                                                   |
 +-----------+-----------------------------------------------------------------------------------------------------------+
 
+When an asset is minted, any file assets, like an image or video, is uploaded to IPFS. The IPFS URLs of the digital assets are then aggregated into as single JSON metadata file and also uploaded to IPFS and is regarded as the token metadata. The metadata is cached by Instamint and accessible via the token URI.
+
 Smart Contracts
 -----------------
 
