@@ -45,5 +45,7 @@ Contents
 
 .. toctree::
    meta
+   disburse
+   yield
    usage
    api
