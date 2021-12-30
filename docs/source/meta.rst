@@ -3,7 +3,6 @@ Meta
 
 The **Meta** API is used to mint NFTs
 .. code-block:: json
-   :caption: A cool example
 {
     "instamintCreatorID":"0f9B3cCD7a8E491EA84D0655E37207a3",
     "partnerID":"F84D6fa6FADA44638AB8a1F907093263",
