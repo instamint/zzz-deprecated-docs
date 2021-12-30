@@ -6,11 +6,11 @@ Instamint
 Key Concepts
 ------------
 
-An NFT is a token that represents a business asset. Each NFT has a unique token identifier and typically points to rich data that describes and defines that asset. The asset may be an image, a video, a municipal bond, shipping container or an award badge. Instamint provides the tools to manage these type of assets via an API. Each asset also has a unique identifier and is correlated with the token identifier. An Instamint client is a B2B user of the Instamint platform.
+An NFT is a token that represents a business *asset*. Each NFT has a unique *token identifier* and typically points to rich data that describes and defines that asset. The asset may be an image, a video, a municipal bond, shipping container or an award badge. Instamint provides the tools to manage these type of assets via an API. Each asset also has a unique identifier and is correlated with the token identifier. An Instamint *client* is a B2B user of the Instamint platform that requires such services.
 
-Instamint parties are entities, human or corporate, that have relationships with business assets. The four type of parties typically associated with an asset are partners, issuers or creators, owners and custodians. Parties are created and registered in Instamint. Each party can be associated with one or more blockchain accounts or wallets.
+Instamint *parties* are entities, human or corporate, that have relationships with business assets. The four type of parties typically associated with an asset are *partners* (synonmous with client), *issuers* or creators, *owners* and *custodians*. Parties are created and registered in Instamint as simply a named entity, no other information is stored. Each party can be associated with one or more blockchain accounts or wallets and each party is associated with a B2B reference ID meaningful only to the partner or client.
 
-The Instamint asset library is a library of the types and templates of assets that can be turnkey minted. For example, a municipal bond may be in the asset library and any entity in the US that wishes to mint a municipal bond can simply use the template or design their own.
+The Instamint *asset library* is a library of the types and templates of assets that can be turnkey minted. For example, a municipal bond may be in the asset library and any entity in the US that wishes to mint a municipal bond can simply use the template if it meets their requirements.
 
 
 Overview
