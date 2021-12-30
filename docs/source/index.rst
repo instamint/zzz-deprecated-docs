@@ -1,8 +1,9 @@
 Instamint
 ===================================
 
-**Instamint** is a B2B API for minting and managing NFTS. It is for NFTs what
-Strip is for payments.
+**Instamint** is a suite of B2B API for minting and managing NFTs. Currently, Instamint is three sets of APIs, each serving a specific purpose.
+
+
 
 It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
 and offers a *simple* and *intuitive* API.
