@@ -1,7 +1,7 @@
 Instamint
 ===================================
 
-**Instamint** is a platform for minting, managing, auctioning, staking, fractionalizing and trading digital business assets. The platform is unbiased, works with multiple chains and has a growing library of types of assets it can handle.
+**Instamint** is a platform for minting, managing, auctioning, staking, fractionalizing and trading digital business assets. The platform is unbiased, works with multiple chains and has a growing library of types of assets it can handle. It is a B2B platform, and thus a platform to/for other platforms.
 
 Key Concepts
 ------------
