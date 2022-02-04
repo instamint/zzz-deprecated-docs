@@ -60,4 +60,6 @@ Contents
    meta
    disburse
    yield
+   contracts
+   assets
 
