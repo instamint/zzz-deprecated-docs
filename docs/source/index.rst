@@ -62,4 +62,5 @@ Contents
    yield
    contracts
    assets
+   gql
 
