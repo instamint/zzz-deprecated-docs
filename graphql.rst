@@ -4,7 +4,7 @@ A preliminary GraphQL API for assets is available at https://gql.instamint.com. 
 
 Asset Schema
 -------------------
-.. code-block:: json
+.. code-block:: javascript
 
 type orderbook {
   bidder_name: String
