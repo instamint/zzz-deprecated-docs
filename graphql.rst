@@ -2,9 +2,12 @@ GraphQL
 ===================================
 A preliminary GraphQL API for assets is available at https://gql.instamint.com. Currently, the service searches through staging data only and will point to production data soon.
 
-Asset Schema
+Asset Query & Schema
 -------------------
-.. code-block:: javascript
+type Query {
+  allAssets: [asset]
+  asset(uuid: String): asset
+}
 
 type orderbook {
   bidder_name: String
@@ -50,7 +53,3 @@ type asset {
   custodian_id: Float
 }
 
-type Query {
-  allAssets: [asset]
-  asset(uuid: String): asset
-}
