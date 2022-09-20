@@ -1,7 +1,7 @@
 Disburse
 ===================================
 
-The Disburse functionality is used to manage royalties, auctions and settlement of token trades. Settlement is currently in USD and USDC. The API requires an API key and has an endpoint of https://api.instamint.com/disburse/v1/. 
+The Disburse functionality is used to manage royalties, auctions and settlement of token trades. Settlement is currently in USD and USDC. The API requires an API key and has an endpoint of https://api.instamint.com/disburse/v1/. This API needs to be enabled by the admin of a client. Fractionalization and royalties featured are accessible via the Meta API and only if Disburse is enabled.
 
 
 Auction Management
@@ -16,9 +16,9 @@ Auction Management
 +-------------------------------------------+-----------------------------------------------------------------------------------------------------+
 | /v1/disburse/auction/current              | Get the auction the asset is currently involved in, if one                                          |
 +-------------------------------------------+-----------------------------------------------------------------------------------------------------+
-| /disburse/v1/auction/bid                  | Bid on asset                                                                                        |
+| /v1/disburse/auction/bid                  | Bid on asset                                                                                        |
 +-------------------------------------------+-----------------------------------------------------------------------------------------------------+
-| /disburse/v1/auction/acceptbid            | Seller accepts the best bid                                                                         |
+| /v1/disburse/auction/acceptbid            | Seller accepts the best bid                                                                         |
 +-------------------------------------------+-----------------------------------------------------------------------------------------------------+
-| /disburse/v1/auction/trade/info           | Get info for a trade executed as a result of an auction                                             |
+| /v1/disburse/auction/trade/info           | Get info for a trade executed as a result of an auction                                             |
 +-------------------------------------------+-----------------------------------------------------------------------------------------------------+
