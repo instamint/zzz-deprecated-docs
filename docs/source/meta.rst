@@ -15,9 +15,9 @@ Party Management
 +----------------------------+-----------------------------------------------------------------------------+
 | Endpoint                   | Purpose                                                                     |
 +============================+=============================================================================+
-| /meta/v1/party/create      | Creates new parties and returns an identifier                               |
+| /v1/meta/party/create      | Creates new parties and returns an identifier                               |
 +----------------------------+-----------------------------------------------------------------------------+
-| /meta/v1/party/lookup      | Lookup a party by name and retrieve                                         |
+| /v1/meta/party/lookup      | Lookup a party by name and retrieve                                         |
 +----------------------------+-----------------------------------------------------------------------------+
 
 Asset Management
@@ -30,7 +30,7 @@ Asset Management
 +----------------------------+-----------------------------------------------------------------------------+
 | /v1/meta/asset/status      | Get status of an asset to determine if it has been minted or not            |
 +----------------------------+-----------------------------------------------------------------------------+
-| /meta/v1/asset/my          | Get all assets I own                                                        |
+| /v1/meta/asset/my          | Get all assets I own                                                        |
 +----------------------------+-----------------------------------------------------------------------------+
 
 
@@ -39,30 +39,35 @@ Minting
 
 The endpoint to mint an asset is /meta/v1/asset/mint. A JSON POST request includes the following parameters that can be supplied.
 
-+------------------+---------------------------------------------------------------------------------------+
-| Parameter        | Purpose                                                                               |
-+==================+=======================================================================================+
-| partnerID        | The ID of the client                                                                  |
-+------------------+---------------------------------------------------------------------------------------+
-| issuerID         | The ID of the creator or issuer of the asset, typically the client's customer         |
-+------------------+---------------------------------------------------------------------------------------+
-| environment      | Testnet or mainnet                                                                    |
-+------------------+---------------------------------------------------------------------------------------+
-| chain            | Ethereum, Polygon or others                                                           |
-+------------------+---------------------------------------------------------------------------------------+
-| waitTolerance    | How much time client can wait to mint for batching and gas savings                    |
-+------------------+---------------------------------------------------------------------------------------+
-| assetType        | The type of asset: media, municipal bond, POA, badge, etc.                            |
-+------------------+---------------------------------------------------------------------------------------+
-| contractType     | Where applicable, the target smart contract type, i.e. 721, 1155, etc.                |
-+------------------+---------------------------------------------------------------------------------------+
-| mintStrategy     | Lazy mint or on-chain                                                                 |
-+------------------+---------------------------------------------------------------------------------------+
-| assets           | A dictionary of asset URLs, as defined by the client                                  |
-+------------------+---------------------------------------------------------------------------------------+
-| metadata         | A dictionary of metadata, as defined by the client                                    |
-+------------------+---------------------------------------------------------------------------------------+
-
++--------------------------+---------------------------------------------------------------------------------------------+
+| Parameter                | Purpose                                                                                     |
++==========================+=============================================================================================+
+| chain                    | Chain to mint to, currently: ethereum-mainnet, ethereum-goerli, algorand-testnet            |
++--------------------------+---------------------------------------------------------------------------------------------+
+| contractType             | Causes a contract to be deployed and minted to, currently: erc721, erc1155 and arc3         |
++--------------------------+---------------------------------------------------------------------------------------------+
+| assetType                | The type of asset, either pre-defined or designed by Designer                               |
++--------------------------+---------------------------------------------------------------------------------------------+
+| contract                 | Moniker of an existing smart contract, i.e. INSTA1, INSTA2                                  |
++--------------------------+---------------------------------------------------------------------------------------------+
+| mintStrategy             | Lazy mint or on-chain                                                                       |
++--------------------------+---------------------------------------------------------------------------------------------+
+| asset                    | A hierarchy of parameters, schemas are pre-built or designed in Designer                    |
++--------------------------+---------------------------------------------------------------------------------------------+
+| store                    | Where to store metadata, currently: ipfs (arweave coming soon)                              |
++--------------------------+---------------------------------------------------------------------------------------------+
+| assetDescription         | Description of asset, not publicly displayed                                                |
++--------------------------+---------------------------------------------------------------------------------------------+
+| note                     | A note added to the asset's notebook                                                        |
++--------------------------+---------------------------------------------------------------------------------------------+
+| fractionalization        | Fractionalization of assets (in 1, 10, 100, 1000 only)                                      |
++--------------------------+---------------------------------------------------------------------------------------------+
+| royaltiesBasisPoint      | Basis of royalties to go to issuer                                                          |
++--------------------------+---------------------------------------------------------------------------------------------+
+| contractSpecific         | Parameters specific to selected contract or contractType                                    |
++--------------------------+---------------------------------------------------------------------------------------------+
+| chainSpecific            | Parameters specific to selected chain                                                       |
++--------------------------+---------------------------------------------------------------------------------------------+
 
 Instamint is multichain, meaning that tokens can be minted across a number of blockchains. Additional chains are planned to be supported and come online over the coming quarters.
 
