@@ -1,7 +1,7 @@
 Meta
 ===================================
 
-The **Meta** API is used to mint NFTs or *assets*. The API requires an API key and has an endpoint of https://api.meta.instamint.com/meta/v1/. 
+The **Meta** API is used to mint NFTs or *assets*. The API requires an API key and has an endpoint of https://api.instamint.com/v1/meta
 
 Instamint clients mint and manage NFTs. Requests to mint via Meta by clients are asynchronous and operate like jobs. When a request to mint an asset is made, a new unique asset identifier is returned and the minting status of that asset is tracked. The client is able to pass in a arbitrary identifier that is then returned back on subsequent status checks, providing the client the ability to correlate the asset with their internal systems.
 
