@@ -1,7 +1,7 @@
 Instamint
 ===================================
 
-**Instamint** is a platform for minting, managing, auctioning, staking, fractionalizing and trading digital business assets. The platform is unbiased, works with multiple chains and has a growing library of types of assets it can handle. It is a B2B platform, and thus a platform to/for other platforms.
+**Instamint** is a platform for minting, managing, auctioning, staking, fractionalizing and trading digital business assets. The platform is unbiased, works with multiple chains and has a growing library of types of assets it can handle. It is a B2B platform, and thus a platform to/for other platforms. It combines off-chain capabilities with on-chain tokens.
 
 Key Concepts
 ------------
@@ -28,25 +28,23 @@ Currently, Instamint is three sets of APIs, each serving a specific purpose for 
 | Yield     | Staking NFTs in best-of-breed DeFi protocols                                                 |
 +-----------+----------------------------------------------------------------------------------------------+
 
-In addition to the APIs, Instamint consists of two applications. 
 
 **Console** is the dashboard applications where partners can track their inventory of assets, manage API keys and view analytics. 
 
-**Market** is a B2C app that allows retails users to mint their Instagram photos and is used as a showcase and requirements driver for the suite of APIs.
 
 Multichain
 -----------
 
-Instamint is multichain, meaning that tokens can be minted across a number of blockchains. Additional chains are planned to be supported and come online over the coming quarters.
+Instamint is multichain, meaning that tokens can be minted across a number of blockchains, currently Ethereum and Algorand (testing). Additional chains are planned to be supported and come online over the coming quarters.
 
 +-----------+-----------------------------------------------------------------------------------------------------------+
 | Chain     | Support Level                                                                                             |
 +===========+===========================================================================================================+
 | Ethereum  | Supported - ERC721, ERC1155                                                                               |
 +-----------+-----------------------------------------------------------------------------------------------------------+
-| Polygon   | Supported - ERC721, ERC1155                                                                               |
+| Algorand  | ARC3                                                                             |
 +-----------+-----------------------------------------------------------------------------------------------------------+
-| Algorand  | Q2 2022                                                                                                   |
+| Polygon   | Q2 2023                                                                                                   |
 +-----------+-----------------------------------------------------------------------------------------------------------+
 
 .. note::
