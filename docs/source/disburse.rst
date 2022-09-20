@@ -3,10 +3,10 @@ Disburse
 
 The Disburse functionality is used to manage royalties, auctions and settlement of token trades. Settlement is currently in USD and USDC. The API requires an API key and has an endpoint of https://api.instamint.com/disburse/v1/. This API needs to be enabled by the admin of a client. Fractionalization and royalties featured are accessible via the Meta API and only if Disburse is enabled.
 
-Auction Management
--------------------
+Auctions
+--------
 
-An asset can be auctioned using one of several auction strategies. Currently, the only auction strategy available is *open ascending* where each bidder can only bid higher than the current best bid. If the bidder bids at or above the ask, a trade is effected. Conversely, a seller can accept the current best bid and effect a trade. Trades are settled with USD or USDC debited and credited accordingly.
+An asset can be auctioned using one of several auction strategies. Currently, the only auction strategy available is *open ascending* where each bidder can only bid higher than the current best bid. If the bidder bids at or above the ask, a trade is effected. Conversely, a seller can accept the current best bid and effect a trade. Trades are settled with USD or USDC debited and credited accordingly. Note that a trade is not the same as a transfer in Instamint. A transfer does not require an auction, an asset's ownership can simply be changed.
 
 Auctions are objects in Instamint, and an Asset can be associated with zero or one auction at any given moment. Once an auction is closed, either via expiration or a manual stop, the auction continues to exist and can be examined, despite not being live. An asset can again be part of a new auction. A new auction is by POSTing parameters including the Instamint asset hash ID, duration (in days), ask and reserve price.
 
