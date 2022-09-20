@@ -26,16 +26,13 @@ Asset Management
 +----------------------------+-----------------------------------------------------------------------------+
 | Endpoint                   | Purpose                                                                     |
 +============================+=============================================================================+
-| /meta/v1/asset/mint        | Request an asset be minted                                                  |
+| /v1/meta/asset/mint        | Request an asset be minted, see JSON payload below                          |
 +----------------------------+-----------------------------------------------------------------------------+
-| /meta/v1/asset/mintBatch   | Request a batch of assets be minted                                         |
+| /v1/meta/asset/status      | Get status of an asset to determine if it has been minted or not            |
 +----------------------------+-----------------------------------------------------------------------------+
-| /meta/v1/asset/status      | Get status of an asset                                                      |
+| /meta/v1/asset/my          | Get all assets I own                                                        |
 +----------------------------+-----------------------------------------------------------------------------+
-| /meta/v1/asset/my          | Get all assets of my (partner) assets                                       |
-+----------------------------+-----------------------------------------------------------------------------+
-| /meta/v1/asset/search      | Coming soon - the ability to search for assets using GraphQL                |
-+----------------------------+-----------------------------------------------------------------------------+
+
 
 Minting
 ---------------
