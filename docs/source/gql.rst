@@ -4,6 +4,7 @@ A preliminary GraphQL API for assets is available at https://q.instamint.network
 
 Asset Query & Schema
 -------------------
+code-block: json
 type asset {
   xref: String
   instamint_asset_hashid: String
