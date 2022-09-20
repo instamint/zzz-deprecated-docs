@@ -58,7 +58,10 @@ Contents
    meta
    disburse
    yield
+   console
+   designer
    contracts
    assets
    gql
+   websocket
 
