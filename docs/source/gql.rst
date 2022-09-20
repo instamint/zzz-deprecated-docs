@@ -1,26 +1,26 @@
 GraphQL
 ===================================
-A preliminary GraphQL API for assets is available at https://gql.instamint.com. Currently, the service searches through staging data only and will point to production data soon.
+A preliminary GraphQL API for assets is available at https://q.instamint.network. Currently, the service searches through staging data only and will point to production data soon.
 
 Asset Query & Schema
 -------------------
-type Query {
-  allAssets: [asset]
-  asset(uuid: String): asset
-}
-
-type orderbook {
-  bidder_name: String
-  bidder_id: Float
-  best_bid: Float
-  ask: String
-}
-
-type contract {
-  short_name: String
-  address: String
-  last_used_token_id: Float
-  description: String
+type asset {
+  xref: String
+  instamint_asset_hashid: String
+  algorand_assetid: Int
+  explorerurl: String
+  created_at: String
+  mint_completed_status: Boolean
+  mint_requestjson: String
+  senderpk: String
+  clawbackpk: String
+  managerpk: String
+  freezepk: String
+  asset_name: String
+  unit_name: String
+  default_frozen: Boolean
+  total: String
+  parties: party
 }
 
 type party {
@@ -30,26 +30,14 @@ type party {
   issuer: String
 }
 
-type asset {
-  b2bcross_referenceid: Float
-  uuid: String
-  created_at: String
-  active: Boolean
-  ask: String
-  best_bid: String
-  block_explorerurl: String
-  ipfs_meta_dataurl: String
-  metadata: String
-  mint_completed_status: Boolean
-  mint_requestjson: String
-  tokenid: Int
-  transaction_receiptjson: String
-  order_book: orderbook
-  contract: contract
-  parties: party
-  bidder_id: Float
-  client_id: Float
-  contract_id: Float
-  custodian_id: Float
+type Query {
+  allAssets: [asset]
+  asset(hashid: String): asset
 }
+
+enum CacheControlScope {
+  PUBLIC
+  PRIVATE
+}
+
 
