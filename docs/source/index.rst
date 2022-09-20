@@ -1,16 +1,12 @@
 Instamint
 ===================================
 
-**Instamint** is a platform for minting, managing, auctioning, staking, fractionalizing and trading digital business assets. The platform is unbiased, works with multiple chains and has a growing library of types of assets it can handle. It is a B2B platform, and thus a platform to/for other platforms. It combines off-chain capabilities with on-chain tokens.
+**Instamint** is a platform for enterprise minting, managing, auctioning, staking, fractionalizing and trading digital business assets. The platform is unbiased, works with multiple chains and has a growing library of types of assets it can handle. It is a B2B platform, and thus a platform to/for other platforms. It combines off-chain capabilities with on-chain tokens. Instamint consists of three categories of APIs
 
 Key Concepts
 ------------
 
 An NFT is a token that represents a business *asset*. Each NFT has a unique *token identifier* and typically points to rich data that describes and defines that asset. The asset may be an image, a video, a municipal bond, shipping container or an award badge. Instamint provides the tools to manage these type of assets via an API. Each asset also has a unique identifier and is correlated with the token identifier. An Instamint *client* is a B2B user of the Instamint platform that requires such services.
-
-Instamint *parties* are entities, human or corporate, that have relationships with business assets. The four type of parties typically associated with an asset are *partners* (synonmous with client), *issuers* or creators, *owners* and *custodians*. Parties are created and registered in Instamint as simply a named entity, no other information is stored. Each party has a unique party ID and each party can be associated with one or more blockchain accounts or wallets and each party is associated with a B2B reference ID meaningful only to the partner or client. An NFT has at least four parties associated with it - the client/partner that created it, the issuer, current owner and custodian.
-
-The Instamint *asset library* is a library of the types and templates of assets that can be turnkey minted. For example, a municipal bond may be in the asset library and any entity in the US that wishes to mint a municipal bond can simply use the template if it meets their requirements.
 
 
 Overview
@@ -28,8 +24,19 @@ Currently, Instamint is three sets of APIs, each serving a specific purpose for 
 | Yield     | Staking NFTs in best-of-breed DeFi protocols                                                 |
 +-----------+----------------------------------------------------------------------------------------------+
 
+**Console** is the dashboard applications where clients and delegated users can track their inventory of assets, manage API keys and view analytics. Console includes an emerging feature called *Designer*. Designer allows the visual construction of asset metadata using taxonomies like ACTUS and others, allowing business analysts to create new asset types with no technical background necessary.
 
-**Console** is the dashboard applications where partners can track their inventory of assets, manage API keys and view analytics. 
+The Instamint *asset library* is a library of the types and templates of assets that can be turnkey minted. For example, a municipal bond may be in the asset library and any entity in the US that wishes to mint a municipal bond can simply use the template if it meets their requirements.
+
+User Model
+----------
+
+A *client* is an enterprise user of Instamint that typically has multiple delegated users. For example, ABC Corp. would be a client and John Smith in the accounting department of ABC is tasked with tokenizing and factoring invoices while Rita Khan in legal uses Instamint to mint DAOs to hold assets, much like LLCs are done today. John and Rita would be *delegated users* of Instamint, delegated usage rights by the client ABC Corp.
+
+Instamint *parties* are entities, human or corporate, that have relationships with business assets. The four type of parties typically associated with an asset are *clients*, *issuers* or creators, *owners* and *custodians*. Parties are created and registered in Instamint as simply a named entity with an Ethereum and Algorand address generated for them. When a new client account is created, an associated party entity is created. The same is for delegated users, each delegated user is also a party that can hold and trade assets.
+
+Each party has a unique party ID and each party can be associated with one or more blockchain accounts or wallets and each party is associated with a B2B reference ID meaningful only to the partner or client. An NFT has at least four parties associated with it - the client that created it, the issuer, current owner and custodian.
+
 
 
 Multichain
