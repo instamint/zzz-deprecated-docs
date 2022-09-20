@@ -38,10 +38,10 @@ Instamint *parties* are entities, human or corporate, that have relationships wi
 
 Each party has a unique party ID and each party can be associated with one or more blockchain accounts or wallets and each party is associated with a B2B reference ID meaningful only to the partner or client. An NFT has at least four parties associated with it - the client that created it, the issuer, current owner and custodian.
 
-Multichain
------------
+API Charges via Ops
+-------------------
 
-Usage of the API is metered via *ops*, a point system that is weighted against the amount of effort it takes to execute the call. Clients purchase ops and consume them by consuming APIs. Clients can allocate ops to their delegated users.
+Usage of the API is metered via consumption of *ops*, a point system that is weighted against the amount of effort it takes to execute the call. Clients purchase ops and consume them when consuming APIs. Clients can allocate ops to their delegated users and reload their accounts with more ops.
 
 Multichain
 -----------
