@@ -1,13 +1,13 @@
 Instamint
 ===================================
 
-**Instamint** is a platform for enterprise minting, managing, auctioning, staking, fractionalizing and trading digital business assets. The platform is unbiased, works with multiple chains and has a growing library of types of assets it can handle. It is a B2B platform, and thus a platform to/for other platforms. It combines off-chain capabilities with on-chain tokens.
+**Instamint** is a platform for enterprise (think companies and organizations) minting, managing, auctioning, staking, fractionalizing and trading digital business assets with each other in a B2B fashion. The platform is unbiased, works with multiple chains and has a growing library of types of assets it can handle. It is a B2B platform, and thus a platform to/for other platforms. It combines off-chain capabilities with on-chain tokens.
 
 
 Overview
 ---------
 
-Currently, Instamint is three sets of APIs, each serving a specific purpose for clients. They are:
+Currently, Instamint consists of three sets of APIs, each serving a specific purpose for clients. They are:
 
 +-----------+----------------------------------------------------------------------------------------------+
 | API       | Description                                                                                  |
@@ -38,6 +38,10 @@ Instamint *parties* are entities, human or corporate, that have relationships wi
 
 Each party has a unique party ID and each party can be associated with one or more blockchain accounts or wallets and each party is associated with a B2B reference ID meaningful only to the partner or client. An NFT has at least four parties associated with it - the client that created it, the issuer, current owner and custodian.
 
+Multichain
+-----------
+
+Usage of the API is metered via *ops*, a point system that is weighted against the amount of effort it takes to execute the call. Clients purchase ops and consume them by consuming APIs. Clients can allocate ops to their delegated users.
 
 Multichain
 -----------
@@ -49,7 +53,7 @@ Instamint is multichain, meaning that tokens can be minted across a number of bl
 +===========+===========================================================================================================+
 | Ethereum  | Supported - ERC721, ERC1155                                                                               |
 +-----------+-----------------------------------------------------------------------------------------------------------+
-| Algorand  | ARC3                                                                             |
+| Algorand  | ARC3                                                                                                      |
 +-----------+-----------------------------------------------------------------------------------------------------------+
 | Polygon   | Q2 2023                                                                                                   |
 +-----------+-----------------------------------------------------------------------------------------------------------+
